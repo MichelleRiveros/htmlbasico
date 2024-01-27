@@ -1,16 +1,381 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi paginita web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Html Basico</title>
 </head>
 <body>
-    <h1>Hello </h1>
+
+    <div>
+
+    <h1>Links</h1>
     <a href="infope.json" target="_blank" rel="noopener noreferer">Click aqui para ver mi informacion personal</a>
     <br>
     <a href="hojaVida.json" target="_blank">Click aqui para ver mi hoja de vida</a>
     <br>
     <a href="InfoTra.json" target="_blank">Click aqui para ver informacion de trabajo</a>
+    
+    </div>
+
+
+    <div>
+
+        <h1>ETIQUETAS</h1>
+
+        <h2>Etiquetas de multimedia</h2>
+
+        <h3>Imagen (picture)</h3>
+        <picture>
+            <source media="(min-width:500)" srcset="storage/img/iphone15.jpg">
+            <img src="storage/img/iphone15.jpg" title="hola" alt="mensaje si la imagen no se encuentra" width="430">
+        </picture>
+
+        <h3>Imagen (figure)</h3>
+        <figure>
+            <img width="260" height="215" src="storage/img/iphone15.jpg" alt="Monito bravo">
+            <figcaption>iPhone</figcaption>
+        </figure>
+
+        <h3>Archivo video de youtube </h3> 
+        <iframe width="360" height="215" src="https://www.youtube.com/embed/R78IADipbZI?si=ZNZ40ua_D3MB4tSx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h3> Archivo de video </h3> 
+        <video width="360" height="215" controls poster ="storage/img/iphone15.jpg">
+            <source src="storage/videos/YoProgramando.mp4" type="video/mp4">
+            Your browser does support the HTLM5 video element.
+        </video>    
+
+        <h3>Archivo de Audio </h3>     
+        <audio controls>
+            <source src="storage/audios/Rels B - lo que hay x aquí.mp3">
+        </audio>
+    </div>
+
+    <div>
+        <h1> Etiquetas contenedoras </h1>
+
+        <h3> 1. Etiqueta div </h3> 
+        <div> Permite agregar informacion semantica no implicita</div>
+
+        <h3> 2. Etiqueta main </h3> 
+        <main>main representa el contenido principal de un body, tener encuenta que esta Etiqueta
+        no te permite agregarla dentro de otras etiquetas, pero lo que si permite es que otras 
+        esten dentro de ella, y solo se puede declarar una etiqueta main en la pagina web.    
+        </main>
+
+        <h3> 3. Etiqueta section </h3> 
+        <section> Es un elemento que hace referencia a cada uno de los bloques genericos de un gran
+        contenido de la pagina web. Se pueden declarar varias de estas etiquetas.
+        </section>
+
+        <h3> 4. Etiqueta header </h3> 
+        <header> Representa el contenido introductorio de la pagina web (ENCABEZADO)</header>
+        
+        <h3> 5. Etiqueta nav </h3> 
+        <nav> Representa el menu de navegacion en la pagina web</nav>
+        
+        <h3> 6. Etiqueta article</h3> 
+        <article> Representa un contenido que puede ser reutilizado independientemente  </article>
+    </div>
+
+    <div>
+        <h1>TABLAS</h1>
+
+        <h2>Primera Tabla</h2>
+        <table border="solid">
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th colspan="3">Empleados</th>
+                </tr>
+    
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                </tr>
+    
+                <tr>
+                    <th>1</th>
+                    <th>Maria</th>
+                    <th>Perez</th>
+                </tr>
+    
+                <tr>
+                    <th>2</th>
+                    <th>Juan</th>
+                    <th>Marcelo</th>
+                </tr>
+    
+                <tr>
+                    <th>3</th>
+                    <th>David</th>
+                    <th>Grass</th>
+                </tr>
+            </thead>    
+        </table>
+
+
+        <h2>Segunda Tabla</h2>
+        <table border="solid">
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th colspan="22">Empleados</th>
+                </tr>
+    
+                <tr>
+                    <th>_id</th>
+                    <th>index</th>
+                    <th>guid</th>
+                    <th>isActive</th>
+                    <th>balance</th>
+                    <th>picture</th>
+                    <th>age</th>
+                    <th>eyeColor</th>
+                    <th>name</th>
+                    <th>gender</th>
+                    <th>company</th>
+                    <th>email</th>
+                    <th>phone</th>
+                    <th>addres</th>
+                    <th>about</th>
+                    <th>registered</th>
+                    <th>lalitude</th>
+                    <th>longitude</th>
+                    <th>greeting</th>
+                    <th>favoriteFruit</th>
+                    <th>tags</th>
+                    <th>friends</th>
+                </tr>
+    
+                <tr>
+                    <th>65a91fee68576587b3ab7aa1</th>
+                    <th>0</th>
+                    <th>f4e26a01-bb4c-4477-93b7-8e399da8643c</th>
+                    <th>true</th>
+                    <th>$1,146.25</th>
+                    <th>
+                        <picture>
+                            <source media="(min-width:100)" srcset="storage/img/foto.png">
+                            <img src="storage/img/iphone15.jpg" title="usuario" alt="La imagen no se encuentera" width="430">
+                        </picture>  
+                    </th>
+                    <th>31</th>
+                    <th>blue</th>
+                    <th>Rita Elliott</th>
+                    <th>female</th>
+                    <th>IMPERIUM</th>
+                    <th>ritaelliott@imperium.com</th>
+                    <th>+1 (835) 526-2886</th>
+                    <th>587 Bedford Place, Springhill, Pennsylvania, 289</th>
+                    <th>Sint ea cillum fugiat nostrud exercitation adipisicing quis esse veniam tempor aliquip reprehenderit ipsum minim. Duis sunt ullamco do non. Laboris officia est Lorem pariatur aute excepteur officia cillum proident tempor commodo magna deserunt Lorem. Sint laboris laborum commodo cupidatat dolore adipisicing culpa amet. Nulla ad pariatur pariatur esse dolor dolor ullamco non anim esse nisi cillum</th>
+                  
+                    <th>2018-04-05T12:34:52 +05:00</th>
+                    <th>-13.515649</th>
+                    <th>-61.415535</th>
+                    <th>Hello, Rita Elliott! You have 1 unread messages</th>
+                    <th>apple</th>
+                    <th>
+                        <ol>
+                            <li>est</li>
+                            <li>consequat</li>
+                            <li>voluptate</li>
+                            <li>in</li>
+                            <li>mollit</li>
+                            <li>pariatur</li>
+                            <li>velit</li>
+                        </ol>
+                    </th>
+    
+                    <th>
+                        <ul>
+                            <li>id
+                                <ul>
+                                    <li>0</li>
+                                </ul>
+                            </li>
+    
+                            <li>name
+                                <ul>
+                                    <li>Janie Harper</li>
+                                </ul>
+                            </li>
+                        </ul>
+    
+                        <ul>
+                            <li>id
+                                <ul>
+                                    <li>1</li>
+                                </ul>
+                            </li>
+    
+                            <li>name
+                                <ul>mensaje si la imagen no se encuentra
+                            </li>
+                        </ul>
+    
+                        <ul>
+                            <li>id
+                                <ul>
+                                    <li>2</li>
+                                </ul>
+                            </li>
+    
+                            <li>name
+                                <ul>
+                                    <li>Dixon Page</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+
+        <h2>Tercera Tabla</h2>
+        <table border="solid">
+            <caption></caption>
+            <thead>
+                <tr>
+                    <th colspan="22">Empleados</th>
+                </tr>
+    
+                <tr>
+                    <th>_id</th>
+                    <th>index</th>
+                    <th>guid</th>
+                    <th>isActive</th>
+                    <th>balance</th>
+                    <th>picture</th>
+                    <th>age</th>
+                    <th>eyeColor</th>
+                    <th>name</th>
+                    <th>gender</th>
+                    <th>company</th>
+                    <th>email</th>
+                    <th>phone</th>
+                    <th>addres</th>
+                    <th>about</th>
+                    <th>registered</th>
+                    <th>lalitude</th>
+                    <th>longitude</th>
+                    <th>greeting</th>
+                    <th>favoriteFruit</th>
+                    <th>tags</th>
+                    <th>friends</th>
+                </tr>
+    
+                <tr>
+                    <th>65a91fee68576587b3ab7aa1</th>
+                    <th>0</th>
+                    <th>f4e26a01-bb4c-4477-93b7-8e399da8643c</th>
+                    <th>true</th>
+                    <th>$1,146.25</th>
+                    <th>
+                        <picture>
+                            <source media="(min-width:100)" srcset="storage/img/foto.png">
+                            <img src="storage/img/iphone15.jpg" title="usuario" alt="La imagen no se encuentera" width="430">
+                        </picture>  
+                    </th>
+                    <th>31</th>
+                    <th>blue</th>
+                    <th>Rita Elliott</th>
+                    <th>female</th>
+                    <th>IMPERIUM</th>
+                    <th>ritaelliott@imperium.com</th>
+                    <th>+1 (835) 526-2886</th>
+                    <th>587 Bedford Place, Springhill, Pennsylvania, 289</th>
+                    <th>Sint ea cillum fugiat nostrud exercitation adipisicing quis esse veniam tempor aliquip reprehenderit ipsum minim. Duis sunt ullamco do non. Laboris officia est Lorem pariatur aute excepteur officia cillum proident tempor commodo magna deserunt Lorem. Sint laboris laborum commodo cupidatat dolore adipisicing culpa amet. Nulla ad pariatur pariatur esse dolor dolor ullamco non anim esse nisi cillum</th>
+                  
+                    <th>2018-04-05T12:34:52 +05:00</th>
+                    <th>-13.515649</th>
+                    <th>-61.415535</th>
+                    <th>Hello, Rita Elliott! You have 1 unread messages</th>
+                    <th>apple</th>
+                    <th>
+                        <ol>
+                            <li>est</li>
+                            <li>consequat</li>
+                            <li>voluptate</li>
+                            <li>in</li>
+                            <li>mollit</li>
+                            <li>pariatur</li>
+                            <li>velit</li>
+                        </ol>
+                    </th>
+    
+                    <th>
+                        <ul>
+                            <li>id
+                                <ul>
+                                    <li>0</li>
+                                </ul>
+                            </li>
+    
+                            <li>name
+                                <ul>
+                                    <li>Janie Harper</li>
+                                </ul>
+                            </li>
+                        </ul>
+    
+                        <ul>
+                            <li>id
+                                <ul>
+                                    <li>1</li>
+                                </ul>
+                            </li>
+    
+                            <li>name
+                                <ul>mensaje si la imagen no se encuentra
+                            </li>
+                        </ul>
+    
+                        <ul>
+                            <li>id
+                                <ul>
+                                    <li>2</li>
+                                </ul>
+                            </li>
+    
+                            <li>name
+                                <ul>
+                                    <li>Dixon Page</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <h1>CAJAS CONTENEDORAS/EJERCICIO</h1>
+
+    <div class="cajas">   
+
+        <div class="box">
+            <di class="boxito"> MICHELLE</di> 
+            <di class="boxitox"> MICHELLE</di> 
+        </div>
+    
+        <div class="box"> 
+            <di class="boxito"> MICHELLE</di> 
+        </div>
+    
+        <div class="box">
+            <di class="boxitoxx"> MICHELLE</di> 
+        </div>
+    
+        <div class="box">
+            <di class="boxito1"> MICHELLE</di> 
+            <di class="boxitox1"> MICHELLE</di> 
+        </div>
+           
+    </div>
 </body>
+
 </html>
